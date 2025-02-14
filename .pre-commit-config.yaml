@@ -13,8 +13,6 @@ repos:
       - id: go-imports
       - id: no-go-testing
       - id: go-unit-tests
-      - id: golangci-lint
-        args: ["run" , "--config=.golangci.yml"]
       # - id: validate-toml
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
     rev: v9.20.0
@@ -22,3 +20,15 @@ repos:
       - id: commitlint
         stages: [commit-msg]
         additional_dependencies: ['@commitlint/config-conventional']
+  - repo: local
+    hooks:
+      - id: golangci-lint
+        name: golangci-lint
+        language: golang
+        entry: golangci-lint
+        args:
+          - "run"
+          - "--config=.golangci.yml"   # explicitly specify your config file
+        pass_filenames: false
+        always_run: true
+        types_or: [go]

@@ -5,10 +5,10 @@ import (
 )
 
 // gross
-func say_helloWorld() {
+func sayHelloWorld() {
 	fmt.Println("Hello, world!")
 }
 
 func main() {
-	say_helloWorld()
+	sayHelloWorld()
 }
