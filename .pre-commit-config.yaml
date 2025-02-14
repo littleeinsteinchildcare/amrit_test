@@ -10,6 +10,7 @@ repos:
     rev: v0.5.1
     hooks:
       - id: go-fmt
+      - id: go-lint
       - id: go-imports
       - id: no-go-testing
       - id: golangci-lint
