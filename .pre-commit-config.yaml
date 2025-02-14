@@ -14,7 +14,7 @@ repos:
       - id: no-go-testing
       - id: go-unit-tests
       - id: golangci-lint
-        args: ["run" , "--config=.golandci.yml"]
+        args: ["run" , "--config=.golangci.yml"]
       # - id: validate-toml
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
     rev: v9.20.0
