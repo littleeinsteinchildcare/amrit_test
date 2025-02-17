@@ -7,6 +7,7 @@ import (
 // gross
 func sayHelloWorld() {
 	fmt.Println("Hello, world!")
+	fmt.Println("Hello, billy!")
 }
 
 func main() {
